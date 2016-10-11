@@ -1,0 +1,52 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="CustomActionbar" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="actionBarStyle">@style/ActionBar.Solid.Appbasetheme</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.Appbasetheme</item>
+    </style>
+
+    <style name="ActionBar.Solid.Appbasetheme" parent="@style/Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="background">@color/actionbar_background</item>
+        <item name="backgroundStacked">@color/orange</item>
+        <item name="backgroundSplit">@color/actionbar_background</item>
+    </style>
+
+    <style name="camera_popmenu_text_style" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:textColor">#343434</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="menu_popup_anim_style">
+        <item name="android:windowEnterAnimation">@anim/pop_enter</item>
+        <item name="android:windowExitAnimation">@anim/pop_out</item>
+    </style>
+
+    <style name="progress_title_style" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    
+    <style name="progress_msg_style" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:textColor">@color/light_gray</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+</resources>

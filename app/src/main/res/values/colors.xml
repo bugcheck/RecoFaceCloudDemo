@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="gray_text">#2e2d2d</color>
+    <color name="orange">#fdae26</color>
+    <color name="line">#ffd489</color>
+    <color name="actionbar_background">#5c98e0</color>
+    <color name="black">#ff000000</color>
+    <color name="server_text">#343434</color>
+    <color name="edit_text_focus">#4386d7</color>
+    <color name="edit_text_unfocus">#a0a0a0</color>
+    <color name="white">#ffffff</color>
+    <color name="bule">#5c98e0</color>
+    <color name="deep_bule">#377dd0</color>
+    <color name="light_gray">#989898</color>
+
+</resources>

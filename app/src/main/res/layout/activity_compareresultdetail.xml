@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_rect"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:paddingBottom="23dp"
+                    android:paddingLeft="28dp"
+                    android:paddingRight="28dp"
+                    android:paddingTop="23dp" >
+
+                    <ImageView
+                        android:id="@+id/image_original"
+                        android:layout_width="107dp"
+                        android:layout_height="145dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/image_source_rect"
+                        android:paddingLeft="1dp"
+                        android:paddingRight="1dp" />
+
+                    <ImageView
+                        android:id="@+id/compare_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="5dp"
+                        android:layout_toRightOf="@id/image_original"
+                        android:src="@drawable/result_arrow" />
+
+                    <ImageView
+                        android:id="@+id/image_compare"
+                        android:layout_width="107dp"
+                        android:layout_height="145dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/image_compare_rect"
+                        android:paddingLeft="1dp"
+                        android:paddingRight="1dp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="25dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="相似度     "
+                        android:textColor="#828282"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_similarity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="57.6%"
+                        android:textColor="#343434"
+                        android:textSize="29sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/line_rect"
+                android:orientation="horizontal"
+                android:padding="20dp" >
+
+                <TextView
+                    android:id="@+id/tv_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="ddddddddd"
+                    android:textColor="#828282"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+ <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+   <Button
+       android:layout_weight="1"
+        android:id="@+id/btn_upload"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:text="报警上传"
+        ></Button>
+    <Button
+        android:layout_weight="1"
+        android:id="@+id/btn_liandong"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:text="警员联动"
+        ></Button>
+        </LinearLayout>
+</LinearLayout>

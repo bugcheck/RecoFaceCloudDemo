@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#ebebeb"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title_tv"
+            style="@style/progress_title_style"
+            android:layout_width="260dp"
+            android:layout_height="48dp"
+            android:background="@color/actionbar_background"
+            android:gravity="center"
+            android:text="xxx" />
+
+        <RelativeLayout
+            android:layout_width="260dp"
+            android:layout_height="96dp"
+            android:background="@android:color/white" >
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:indeterminateDrawable="@drawable/rotate_progress_drawable" />
+
+            <TextView
+                android:id="@+id/msg_tv"
+                style="@style/progress_msg_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/progressBar1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@+id/progressBar1"
+                android:text="AAAA" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
