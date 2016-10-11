@@ -42,6 +42,12 @@ public class SplashActivity extends Activity {
 		myApplication = (MyApplication) this.getApplication();
 		settingsHelper = new SettingsHelper(this);
 		login();
+		Mqtt_PushInit();
+	}
+
+	private void Mqtt_PushInit() {
+
+
 	}
 
 	/**
