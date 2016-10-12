@@ -1,6 +1,6 @@
 package com.reconova.facecloud.mqtt.internal;
 
-import org.eclipse.paho.android.sample.activity.Connection;
+
 
 /**
  * Persistence Exception, defines an error with persisting a {@link Connection}

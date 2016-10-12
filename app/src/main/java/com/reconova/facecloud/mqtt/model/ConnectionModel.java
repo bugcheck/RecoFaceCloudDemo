@@ -27,8 +27,8 @@ public class ConnectionModel {
 
 
     private String clientHandle = new String();
-    private String clientId = "AndroidExampleClient";
-    private String serverHostName = "iot.eclipse.org";
+    private String clientId = "marsYxAndroidMqttClient";
+    private String serverHostName = "192.168.1.198";
     private int serverPort = 1883;
     private boolean cleanSession = true;
     private String username = new String();

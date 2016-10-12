@@ -16,11 +16,7 @@ import org.eclipse.paho.client.mqttv3.MqttException;
 
 import java.util.ArrayList;
 
-/**
- * This Class handles receiving information from the
- * {@link MqttAndroidClient} and updating the {@link Connection} associated with
- * the action
- */
+
 public class ActionListener implements IMqttActionListener {
 
     private static final String TAG = "ActionListener";
