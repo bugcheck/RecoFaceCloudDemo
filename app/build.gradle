@@ -19,7 +19,7 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:22.2.1'
+    compile 'com.android.support:support-v4:23.2.1'
     compile 'com.android.support:appcompat-v7:+'
     compile files('libs/activation.jar')
     compile files('libs/additionnal.jar')
