@@ -54,3 +54,6 @@ Temporary Items
 /captures
 *.apk
 *.class
+.idea/gradle.xml
+.idea/modules.xml
+.idea/vcs.xml
