@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <FrameLayout
         android:id="@+id/frame_camera_draw"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/bottom_area" >
+        android:layout_height="0dp"
+        android:layout_weight="2">
 
         <com.reconova.facecloud.view.CameraSurfaceView
             android:id="@+id/camera_surfaceview"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
-        </com.reconova.facecloud.view.CameraSurfaceView>
+            android:layout_height="match_parent"></com.reconova.facecloud.view.CameraSurfaceView>
 
         <ImageView
+
             android:id="@+id/mask_rect"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -25,80 +25,87 @@
         <com.reconova.facecloud.view.FaceView
             android:id="@+id/face_view"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
-        </com.reconova.facecloud.view.FaceView>
+            android:layout_height="match_parent"></com.reconova.facecloud.view.FaceView>
 
         <ImageView
             android:id="@+id/iv_selectphoto"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal|top"
-            android:layout_marginTop="75dp"
-            android:background="@android:color/transparent"
-            android:text="请保持头在中间区域"
-            android:textColor="#FFFFFF"
-            android:textSize="15sp" />
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal|top"-->
+        <!---->
+        <!--android:background="@android:color/transparent"-->
+        <!--android:text="请保持头在中间区域"-->
+        <!--android:textColor="#FFFFFF"-->
+        <!--android:textSize="15sp" />-->
     </FrameLayout>
 
-    <Button
-        android:id="@+id/btn_shutter"
-        android:layout_width="56dp"
-        android:layout_height="35dp"
-        android:layout_alignParentRight="true"
-        android:layout_centerVertical="true"
-        android:background="@drawable/takephoto_button_selector" />
+    <!--<Button-->
+    <!--android:id="@+id/btn_shutter"-->
+    <!--android:layout_width="56dp"-->
+    <!--android:layout_height="35dp"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:background="@drawable/takephoto_button_selector" />-->
 
     <LinearLayout
         android:id="@+id/bottom_area"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_height="0dp"
+        android:layout_weight="2"
         android:background="#FFFFFF"
-        android:orientation="vertical" >
+        android:orientation="vertical">
 
-        <com.reconova.facecloud.view.TextMoveLayout
-            android:id="@+id/textLayout"
-            android:layout_width="match_parent"
-            android:layout_height="27dp"
-            android:layout_marginLeft="15dp"
-            android:background="#FFFFFF" />
+        <!--<com.reconova.facecloud.view.TextMoveLayout-->
+        <!--android:id="@+id/textLayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="27dp"-->
+        <!--android:layout_marginLeft="15dp"-->
+        <!--android:background="#FFFFFF" />-->
 
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="18dp" >-->
+        <!--&lt;!&ndash; -->
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:text="阈 值"-->
+        <!--android:textColor="#343434"-->
+        <!--android:textSize="15sp" />-->
+        <!--&ndash;&gt;-->
+        <!--<SeekBar-->
+        <!--android:id="@+id/seekbar_similarity"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:progressDrawable="@drawable/seekbar_background"-->
+        <!--android:thumb="@drawable/home_button" />-->
+        <!--</LinearLayout>-->
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="18dp" >
-<!-- 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:paddingLeft="10dp"
-                android:text="阈 值"
-                android:textColor="#343434"
-                android:textSize="15sp" />
- -->
-            <SeekBar
-                android:id="@+id/seekbar_similarity"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:progressDrawable="@drawable/seekbar_background"
-                android:thumb="@drawable/home_button" />
-        </LinearLayout>
-
-        <Button
-            android:id="@+id/btn_compare"
-            android:layout_width="173dp"
-            android:layout_height="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
             android:layout_gravity="center"
-            android:layout_marginBottom="29dp"
-            android:background="@drawable/compare_button_selector"
-            android:text="比对"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:gravity="bottom"
+            >
+
+            <Button
+                android:id="@+id/btn_compare"
+                android:layout_width="173dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="2dp"
+                android:layout_gravity="center"
+                android:background="@drawable/compare_button_selector"
+                android:text="比对"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
     </LinearLayout>
 
-</RelativeLayout>
+</LinearLayout>

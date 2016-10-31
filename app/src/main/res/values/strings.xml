@@ -18,4 +18,8 @@
     <string name="scoket_timeout_failed_tip">网络连接超时!</string>
     <string name="io_failed_tip">文件读写失败!</string>
 
+
+    <drawable name="clr_normal">#5c98e0</drawable>
+    <drawable name="clr_pressed">#f44100</drawable>
+    <drawable name="clr_normalbackground">#ffffff</drawable>
 </resources>

@@ -6,6 +6,7 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.RelativeLayout.LayoutParams;
@@ -33,8 +34,8 @@ public class SelectPhotoPopupwindow {
 	public void showPopupWindow(View location) {
 		View view = (RelativeLayout) LayoutInflater.from(activity)
 				.inflate(R.layout.camera_popmenu_layout, null);
-		TextView camera = (TextView) view.findViewById(R.id.tv_take_photo);
-		TextView photos = (TextView) view.findViewById(R.id.tv_choose_photo);
+		Button camera = (Button) view.findViewById(R.id.tv_take_photo);
+		Button photos = (Button) view.findViewById(R.id.tv_choose_photo);
 		View outsideView = view.findViewById(R.id.outside);
 		outsideView.setOnClickListener(new OnClickListener() {
 

@@ -33,14 +33,15 @@
                     android:layout_marginRight="5dp"
                     android:src="@drawable/setting_data" />
 
-                <TextView
+                <Button
                     android:id="@+id/setting_data"
                     android:layout_width="wrap_content"
                     android:layout_height="45dp"
                     android:gravity="center"
                     android:text="远程数据库"
+                    android:background="@drawable/pop_button_selector"
                     android:textColor="@android:color/white"
-                    android:textSize="18sp" />
+                    android:textSize="12sp" />
             </LinearLayout>
 
             <View
@@ -63,14 +64,15 @@
                     android:layout_marginRight="5dp"
                     android:src="@drawable/setting_contrast" />
 
-                <TextView
+                <Button
                     android:id="@+id/setting_contrast"
                     android:layout_width="wrap_content"
+                    android:background="@drawable/pop_button_selector"
                     android:layout_height="45dp"
                     android:gravity="center"
                     android:text="对比设置"
                     android:textColor="@android:color/white"
-                    android:textSize="18sp" />
+                    android:textSize="12sp" />
             </LinearLayout>
         </LinearLayout>
     </RelativeLayout>

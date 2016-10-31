@@ -14,12 +14,13 @@
         android:paddingLeft="20dp"
         android:paddingRight="20dp" >
 
-        <TextView
+        <Button
             android:id="@+id/tv_take_photo"
             style="@style/camera_popmenu_text_style"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="@drawable/camera_selector"
             android:gravity="center_vertical"
             android:paddingLeft="10dp"
             android:text="拍照" />
@@ -29,7 +30,8 @@
             android:layout_height="1dip"
             android:background="#e4e4e4" />
 
-        <TextView
+        <Button
+            android:background="@drawable/camera_selector"
             android:id="@+id/tv_choose_photo"
             style="@style/camera_popmenu_text_style"
             android:layout_width="match_parent"

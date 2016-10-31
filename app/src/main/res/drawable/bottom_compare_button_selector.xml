@@ -3,4 +3,5 @@
     <item android:state_selected="true" android:drawable="@drawable/home_button_contrast_select"></item>
     <item android:state_pressed="true" android:drawable="@drawable/home_button_contrast_select"></item>
     <item android:state_selected="false" android:drawable="@drawable/home_button_contrast"></item>
+
 </selector>

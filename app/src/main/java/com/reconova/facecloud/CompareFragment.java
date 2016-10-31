@@ -33,6 +33,7 @@ import android.view.ViewTreeObserver;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
@@ -155,16 +156,16 @@ public class CompareFragment extends Fragment {
 
 		screenWidth = getActivity().getWindowManager().getDefaultDisplay()
 				.getWidth();
-		tv_similarity = new TextView(getActivity());
-		// tv_similarity.setBackgroundColor(Color.rgb(245, 245, 245));
-		tv_similarity.setTextColor(Color.rgb(0, 161, 229));
-		tv_similarity.setTextSize(16);
-		layoutParams = new ViewGroup.LayoutParams(screenWidth, 40);
-		textMoveLayout.addView(tv_similarity, layoutParams);
+//		tv_similarity = new TextView(getActivity());
+//		// tv_similarity.setBackgroundColor(Color.rgb(245, 245, 245));
+//		tv_similarity.setTextColor(Color.rgb(0, 161, 229));
+//		tv_similarity.setTextSize(16);
+//		layoutParams = new ViewGroup.LayoutParams(screenWidth, 40);
+//		textMoveLayout.addView(tv_similarity, layoutParams);
 		//seekbar_similarity.setProgress(similarity);
-		moveStep = (float) (((float) screenWidth / (float) 100) * 0.8);
-		tv_similarity.layout((int) ((similarity * moveStep)), 10, screenWidth,
-				70);
+//		moveStep = (float) (((float) screenWidth / (float) 100) * 0.8);
+//		tv_similarity.layout((int) ((similarity * moveStep)), 10, screenWidth,
+//				70);
 		//tv_similarity.setText(similarity + "%");
 
 		mMainHandler = new MainHandler();
@@ -172,30 +173,30 @@ public class CompareFragment extends Fragment {
 		mPhotoUtils = new PhotoUtils((MainActivity) getActivity(),
 				(MainActivity) getActivity());
 
-		shutterBtn.setOnClickListener(new BtnListeners());
+//		shutterBtn.setOnClickListener(new BtnListeners());
 		compareButton.setOnClickListener(new BtnListeners());
-
-		seekbar_similarity
-				.setOnSeekBarChangeListener(new OnSeekBarChangeListener() {
-
-					@Override
-					public void onStopTrackingTouch(SeekBar seekBar) {
-						similarity = seekBar.getProgress();
-					}
-
-					@Override
-					public void onStartTrackingTouch(SeekBar seekBar) {
-
-					}
-
-					@Override
-					public void onProgressChanged(SeekBar seekBar,
-												  int progress, boolean fromUser) {
-						tv_similarity.layout((int) (progress * moveStep), 10,
-								screenWidth, 70);
-						tv_similarity.setText(progress + "%");
-					}
-				});
+//
+//		seekbar_similarity
+//				.setOnSeekBarChangeListener(new OnSeekBarChangeListener() {
+//
+//					@Override
+//					public void onStopTrackingTouch(SeekBar seekBar) {
+//						similarity = seekBar.getProgress();
+//					}
+//
+//					@Override
+//					public void onStartTrackingTouch(SeekBar seekBar) {
+//
+//					}
+//
+//					@Override
+//					public void onProgressChanged(SeekBar seekBar,
+//												  int progress, boolean fromUser) {
+//						tv_similarity.layout((int) (progress * moveStep), 10,
+//								screenWidth, 70);
+//						tv_similarity.setText(progress + "%");
+//					}
+//				});
 		return rootView;
 	}
 
@@ -204,16 +205,16 @@ public class CompareFragment extends Fragment {
 				.findViewById(R.id.frame_camera_draw);
 		surfaceView = (CameraSurfaceView) rootView
 				.findViewById(R.id.camera_surfaceview);
-		shutterBtn = (Button) rootView.findViewById(R.id.btn_shutter);
-		shutterBtn.setVisibility(View.INVISIBLE);
+//		shutterBtn = (Button) rootView.findViewById(R.id.btn_shutter);
+//		shutterBtn.setVisibility(View.INVISIBLE);
 		faceView = (FaceView) rootView.findViewById(R.id.face_view);
 		compareButton = (Button) rootView.findViewById(R.id.btn_compare);
-		seekbar_similarity = (SeekBar) rootView
-				.findViewById(R.id.seekbar_similarity);
-		seekbar_similarity.setVisibility(View.INVISIBLE);
+//		seekbar_similarity = (SeekBar) rootView
+//				.findViewById(R.id.seekbar_similarity);
+//		seekbar_similarity.setVisibility(View.INVISIBLE);
 		iv_selectphoto = (ImageView) rootView.findViewById(R.id.iv_selectphoto);
-		textMoveLayout = (TextMoveLayout) rootView
-				.findViewById(R.id.textLayout);
+//		textMoveLayout = (TextMoveLayout) rootView
+//				.findViewById(R.id.textLayout);
 		mask_rect = (ImageView) rootView.findViewById(R.id.mask_rect);
 		newDialog = new NewDialog(getActivity());
 	}
@@ -223,15 +224,15 @@ public class CompareFragment extends Fragment {
 		@Override
 		public void onClick(View v) {
 			switch (v.getId()) {
-				case R.id.btn_shutter:
-					if (isCameraOpen) {
-						takePicture();
-						isCameraOpen = false;
-					} else {
-						startPreview();
-						isCameraOpen = true;
-					}
-					break;
+//				case R.id.btn_shutter:
+//					if (isCameraOpen) {
+//						takePicture();
+//						isCameraOpen = false;
+//					} else {
+//						startPreview();
+//						isCameraOpen = true;
+//					}
+//					break;
 				case R.id.btn_compare:
 
 					takePicture();
@@ -669,7 +670,7 @@ public class CompareFragment extends Fragment {
 									Log.i("test", "rateHeight===" + rateHeight);
 									Log.i("test", "marginBottom==="
 											+ marginBottom);
-									RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) framelayout
+									LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) framelayout
 											.getLayoutParams();
 									params.topMargin = marginTop;
 									params.bottomMargin = marginBottom;

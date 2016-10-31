@@ -29,7 +29,7 @@ public class RegisterFragment extends Fragment {
 	private static final String ARG_SECTION_NUMBER = "section_number";
 
 	/** Click this for select images. */
-	ImageView mSelectCamera;
+	Button mSelectCamera;
 	ImageView mSelectPhoto;
 
 	EditText mNameEditText;
@@ -66,7 +66,7 @@ public class RegisterFragment extends Fragment {
 				false);
 
 		mSelectPhoto = (ImageView) rootView.findViewById(R.id.iv_select_photo);
-		mSelectCamera = (ImageView) rootView.findViewById(R.id.iv_select_image);
+		mSelectCamera = (Button) rootView.findViewById(R.id.iv_select_image);
 		mSelectCamera.setOnClickListener(new OnClickListener() {
 
 			@Override

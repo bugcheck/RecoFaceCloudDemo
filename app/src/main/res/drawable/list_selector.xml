@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@drawable/clr_pressed" /><!--按下时的背景-->
+
+    <item android:state_selected="true" android:drawable="@drawable/clr_normal" /><!--选中状态的背景-->
+    <item android:drawable="@drawable/clr_normalbackground" /> <!--默认背景-->
+</selector>

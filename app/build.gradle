@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.3"
+    compileSdkVersion 24
+    buildToolsVersion "24.0.3"
 
     defaultConfig {
-        applicationId "com.reconova.facecloud"
+        applicationId "com.onecloudtech.facecloud"
         minSdkVersion 15
-        targetSdkVersion 22
+        targetSdkVersion 24
     }
 
     buildTypes {
@@ -19,7 +19,7 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:23.2.1'
+    compile 'com.android.support:support-v4:24.2.1'
     compile 'com.android.support:appcompat-v7:+'
     compile files('libs/activation.jar')
     compile files('libs/additionnal.jar')

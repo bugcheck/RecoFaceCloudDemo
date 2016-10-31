@@ -7,6 +7,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
@@ -38,8 +39,8 @@ public class MenuPopupWindow {
 		View view = LayoutInflater.from(context).inflate(R.layout.menu_pop,
 				null);
 		LinearLayout ll_group = (LinearLayout) view.findViewById(R.id.ll_group);
-		TextView setting_data = (TextView) view.findViewById(R.id.setting_data);
-		TextView setting_contrast = (TextView) view
+		Button setting_data = (Button) view.findViewById(R.id.setting_data);
+		Button setting_contrast = (Button) view
 				.findViewById(R.id.setting_contrast);
 		ll_group.setOnClickListener(new OnClickListener() {
 

@@ -7,6 +7,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.View.OnClickListener;
@@ -71,7 +72,7 @@ public class CompareSettingsActivity extends ActionBarActivity {
 		tv_similarity.layout((int) ((setting_similarity * moveStep)), 10, screenWidth,
 				70);
 		tv_similarity.setText(setting_similarity + "%");
-
+		tv_similarity.setTextSize(12);
 		seekbar_similarity
 				.setOnSeekBarChangeListener(new OnSeekBarChangeListener() {
 
@@ -106,6 +107,18 @@ public class CompareSettingsActivity extends ActionBarActivity {
 			numList.add(i + "");
 		}
 		compare_num.setItems(numList);
+		compare_num.setOnTouchListener(new View.OnTouchListener() {
+			@Override
+			public boolean onTouch(View v, MotionEvent motionEvent) {
+				v.getParent().requestDisallowInterceptTouchEvent(true);
+				switch (motionEvent.getAction() & MotionEvent.ACTION_MASK) {
+					case MotionEvent.ACTION_UP:
+						v.getParent().requestDisallowInterceptTouchEvent(false);
+						break;
+				}
+				return false;
+			}
+		});
 		compare_num.setOnWheelViewListener(new WheelView.OnWheelViewListener() {
 			@Override
 			public void onSelected(int selectedIndex, String item) {

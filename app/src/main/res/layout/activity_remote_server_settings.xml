@@ -4,148 +4,154 @@
     android:layout_height="match_parent"
     android:background="#F0F0F0"
     android:gravity="center"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
-    <LinearLayout
+    <ScrollView
+
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="13dp"
-        android:layout_marginTop="13dp"
-         android:background="@drawable/line_rect"
-        android:orientation="vertical" >
+        android:layout_height="match_parent">
 
         <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="37dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginTop="24dp" >
 
-            <TextView
-                android:id="@+id/tv_username"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:text="用户名 :"
-                android:textColor="@color/server_text"
-                android:textSize="20.0sp" />
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="13dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/line_rect"
+            android:orientation="vertical">
 
-            <EditText
-                android:gravity="center"
-                android:id="@+id/edt_username"
+            <LinearLayout
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:background="@drawable/edittext_selector"
-                android:hint="请输入用户名"
-                android:singleLine="true"
-                android:textColor="@color/edit_text_unfocus"
-                android:textSize="18.0sp" />
-        </LinearLayout>
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp">
 
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="37dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginTop="19dp" >
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="用户名 :"
+                    android:textColor="@color/server_text"
+                    android:textSize="20.0sp" />
 
-            <TextView
-                android:id="@+id/tv_password"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:text="密    码 :"
-                android:textColor="@color/server_text"
-                android:textSize="20.0sp" />
+                <EditText
+                    android:id="@+id/edt_username"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/edittext_selector"
+                    android:gravity="center"
+                    android:hint="请输入用户名"
+                    android:singleLine="true"
+                    android:textColor="@color/edit_text_unfocus"
+                    android:textSize="18.0sp" />
+            </LinearLayout>
 
-            <EditText
-                android:gravity="center"
-                android:id="@+id/edt_password"
+            <LinearLayout
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:background="@drawable/edittext_selector"
-                android:hint="请输入密码"
-                android:inputType="textPassword"
-                android:singleLine="true"
-                android:textColor="@color/edit_text_unfocus"
-                android:textSize="18.0sp" />
-        </LinearLayout>
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp">
 
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="37dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginTop="19dp" >
+                <TextView
+                    android:id="@+id/tv_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="密    码 :"
+                    android:textColor="@color/server_text"
+                    android:textSize="20.0sp" />
 
-            <TextView
-                android:id="@+id/tv_ip"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:text="IP地址 :"
-                android:textColor="@color/server_text"
-                android:textSize="20.0sp" />
+                <EditText
+                    android:id="@+id/edt_password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/edittext_selector"
+                    android:gravity="center"
+                    android:hint="请输入密码"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textColor="@color/edit_text_unfocus"
+                    android:textSize="18.0sp" />
+            </LinearLayout>
 
-            <EditText
-                android:gravity="center"
-                android:id="@+id/edt_ip"
+            <LinearLayout
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:background="@drawable/edittext_selector"
-                android:digits="0123456789."
-                android:hint="请输入IP地址"
-                android:singleLine="true"
-                android:textColor="@color/edit_text_unfocus"
-                android:textSize="18.0sp" />
-        </LinearLayout>
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp">
 
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="37dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginTop="19dp" >
+                <TextView
+                    android:id="@+id/tv_ip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="IP地址 :"
+                    android:textColor="@color/server_text"
+                    android:textSize="20.0sp" />
 
-            <TextView
-                android:id="@+id/tv_host"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:text="端口号 :"
-                android:textColor="@color/server_text"
-                android:textSize="20.0sp" />
+                <EditText
+                    android:id="@+id/edt_ip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/edittext_selector"
+                    android:digits="0123456789."
+                    android:gravity="center"
+                    android:hint="请输入IP地址"
+                    android:singleLine="true"
+                    android:textColor="@color/edit_text_unfocus"
+                    android:textSize="18.0sp" />
+            </LinearLayout>
 
-            <EditText
-                android:gravity="center"
-                android:id="@+id/edt_host"
+            <LinearLayout
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:background="@drawable/edittext_selector"
-                android:hint="请输入端口号"
-                android:inputType="number"
-                android:maxLength="5"
-                android:singleLine="true"
-                android:textColor="@color/edit_text_unfocus"
-                android:textSize="18.0sp" />
-        </LinearLayout>
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp">
 
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginTop="60dp" >
+                <TextView
+                    android:id="@+id/tv_host"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="端口号 :"
+                    android:textColor="@color/server_text"
+                    android:textSize="20.0sp" />
 
-            <Button
-                android:id="@+id/btn_ok"
+                <EditText
+                    android:id="@+id/edt_host"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/edittext_selector"
+                    android:gravity="center"
+                    android:hint="请输入端口号"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:singleLine="true"
+                    android:textColor="@color/edit_text_unfocus"
+                    android:textSize="18.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/ok_button_selector"
-                android:text="确认"
-                android:textColor="@color/white"
-                android:textSize="30.0sp" />
-        </LinearLayout>
-    </LinearLayout>
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp">
 
+                <Button
+                    android:id="@+id/btn_ok"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ok_button_selector"
+                    android:text="确认"
+                    android:textColor="@color/white"
+                    android:textSize="30.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

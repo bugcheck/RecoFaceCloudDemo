@@ -23,6 +23,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -38,7 +39,7 @@ import com.reconova.facecloud.util.SettingsHelper;
 import com.reconova.facecloud.util.ToastUtil;
 
 public class RemoteDBSettingsActivity extends ActionBarActivity {
-	private TextView tv_server_setting;
+	private Button tv_server_setting;
 	private ListView listview_facedb;
 	private List<FaceDB> facedb_list;
 	private SettingsHelper settingsHelper;
@@ -74,7 +75,7 @@ public class RemoteDBSettingsActivity extends ActionBarActivity {
 			}
 		});
 
-		tv_server_setting = (TextView) findViewById(R.id.tv_server_setting);
+		tv_server_setting = (Button) findViewById(R.id.tv_server_setting);
 		tv_server_setting.setOnClickListener(new OnClickListener() {
 
 			@Override
